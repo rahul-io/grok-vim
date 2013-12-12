@@ -37,6 +37,7 @@ set background=dark
 colorscheme molokai 
 
 imap jj <esc>
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/* 
 
 let g:airline#extensions#tabline#enabled = 1
 let g:syntastic_enable_highlighting = 0
