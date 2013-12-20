@@ -38,10 +38,10 @@ colorscheme molokai
 
 imap jj <esc>
 ino jj <esc>
-cno  <c-c>
+cno jj <c-c>
 vno v <esc>
 
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/* 
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*
 
 let g:airline#extensions#tabline#enabled = 1
 let g:syntastic_enable_highlighting = 0
