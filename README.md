@@ -15,7 +15,7 @@ The plugins are setup as submodules and the vimrc must be linked to your home di
 
 ##Adding new modules
 
-Adding modules is easy, for example, if we needed to add Tim Pope's git plugin, fugative.
+Adding modules is easy, for example, if we needed to add Tim Pope's git plugin, fugitive.
 
     git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
     git add .
@@ -25,3 +25,10 @@ Adding modules is easy, for example, if we needed to add Tim Pope's git plugin, 
 ##Upgrading modules
 
     git submodule foreach git pull origin master
+
+##Removing unwanted modules
+
+    cd ~/.vim
+    git rm --cached bundle/"some module here"
+    git commit -a "Removing Some module"
+    git push
