@@ -46,3 +46,6 @@
 [submodule "bundle/snippets"]
 	path = bundle/snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "bundle/stylus"]
+	path = bundle/stylus
+	url = git@github.com:wavded/vim-stylus.git
