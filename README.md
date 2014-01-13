@@ -30,5 +30,6 @@ Adding modules is easy, for example, if we needed to add Tim Pope's git plugin, 
 
     cd ~/.vim
     git rm --cached bundle/"some module here"
-    git commit -a "Removing Some module"
+    rm -rf bundle/"some module here"
+    git commit -am "Removing Some module"
     git push
