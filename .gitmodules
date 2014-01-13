@@ -55,3 +55,6 @@
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = git@github.com:vim-scripts/taglist.vim.git
+[submodule "bundle/base16"]
+	path = bundle/base16
+	url = git://github.com/chriskempson/base16-vim.git

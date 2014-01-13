@@ -34,7 +34,7 @@ set showmatch
 set nostartofline
 
 set background=dark
-colorscheme molokai 
+colorscheme base16-default
 
 imap jj <esc>
 ino jj <esc>
@@ -46,3 +46,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*
 let g:airline#extensions#tabline#enabled = 1
 let g:syntastic_enable_highlighting = 0
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
+
+au BufNewFile,BufRead *.plb set filetype=plsql
+au BufNewFile,BufRead *.pls set filetype=plsql
