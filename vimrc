@@ -46,8 +46,6 @@ vno v <esc>
 nnoremap <silent> ,z :bp<CR>
 nnoremap <silent> ,x :bn<CR>
 
-nnoremap <silent> ,T :TagbarToggle<CR>
-
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/components/*,*/public/*
 " neocomplete
 " Next generation completion framework.
@@ -74,7 +72,6 @@ autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 let g:syntastic_enable_highlighting = 0
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 let g:sneak#streak = 1
-let g:tagbar_ctags_bin = "/opt/boxen/homebrew/bin/ctags"
 
 au BufNewFile,BufRead *.plb set filetype=plsql
 au BufNewFile,BufRead *.pls set filetype=plsql
