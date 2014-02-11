@@ -43,12 +43,36 @@ imap jj <esc>
 ino jj <esc>
 cno jj <c-c>
 vno v <esc>
+nnoremap <silent> ,z :bp<CR>
+nnoremap <silent> ,x :bn<CR>
+
+nnoremap <silent> ,T :TagbarToggle<CR>
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/components/*,*/public/*
+" neocomplete
+" Next generation completion framework.
+
+
+let g:acp_enableAtStartup = 0
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+
+" Default # of completions is 100, that's crazy.
+let g:neocomplete#max_list = 5
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" Set minimum syntax keyword length.
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
+
 
 let g:syntastic_enable_highlighting = 0
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
-let g:neocomplete#enable_at_startup = 1
 let g:sneak#streak = 1
 
 au BufNewFile,BufRead *.plb set filetype=plsql
