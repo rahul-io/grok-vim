@@ -58,3 +58,27 @@
 [submodule "bundle/base16"]
 	path = bundle/base16
 	url = git://github.com/chriskempson/base16-vim.git
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = git@github.com:sjl/gundo.vim.git
+[submodule "bundle/jls"]
+	path = bundle/jls
+	url = git@github.com:othree/javascript-libraries-syntax.vim.git
+[submodule "bundle/lightline"]
+	path = bundle/lightline
+	url = git@github.com:itchyny/lightline.vim.git
+[submodule "bundle/neocomplete"]
+	path = bundle/neocomplete
+	url = git@github.com:Shougo/neocomplete.vim.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git@github.com:majutsushi/tagbar.git
+[submodule "bundle/abolish"]
+	path = bundle/abolish
+	url = git@github.com:tpope/vim-abolish.git
+[submodule "bundle/javascript"]
+	path = bundle/javascript
+	url = git@github.com:pangloss/vim-javascript.git
+[submodule "bundle/sneak"]
+	path = bundle/sneak
+	url = git@github.com:justinmk/vim-sneak.git
