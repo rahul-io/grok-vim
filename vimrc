@@ -74,9 +74,21 @@ autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 let g:syntastic_enable_highlighting = 0
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 let g:sneak#streak = 1
+let g:tagbar_ctags_bin = "/opt/boxen/homebrew/bin/ctags"
 
 au BufNewFile,BufRead *.plb set filetype=plsql
 au BufNewFile,BufRead *.pls set filetype=plsql
+
+let g:tagbar_type_groovy = {
+    \ 'ctagstype' : 'groovy',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'c:class',
+        \ 'i:interface',
+        \ 'f:function',
+        \ 'v:variables',
+    \ ]
+\ }
 
 let g:lightline = {
       \ 'colorscheme': 'Tomorrow_Night',
