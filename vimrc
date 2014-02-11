@@ -37,7 +37,7 @@ set showmatch
 set nostartofline
 
 set background=dark
-colorscheme base16-tomorrow
+colorscheme base16-default
 
 imap jj <esc>
 ino jj <esc>
@@ -77,7 +77,7 @@ au BufNewFile,BufRead *.plb set filetype=plsql
 au BufNewFile,BufRead *.pls set filetype=plsql
 
 let g:lightline = {
-      \ 'colorscheme': 'Tomorrow_Night',
+      \ 'colorscheme': 'wombat',
       \ 'mode_map': { 'c': 'NORMAL' },
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ]
