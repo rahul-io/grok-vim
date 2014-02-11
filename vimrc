@@ -79,17 +79,6 @@ let g:tagbar_ctags_bin = "/opt/boxen/homebrew/bin/ctags"
 au BufNewFile,BufRead *.plb set filetype=plsql
 au BufNewFile,BufRead *.pls set filetype=plsql
 
-let g:tagbar_type_groovy = {
-    \ 'ctagstype' : 'groovy',
-    \ 'kinds'     : [
-        \ 'p:package',
-        \ 'c:class',
-        \ 'i:interface',
-        \ 'f:function',
-        \ 'v:variables',
-    \ ]
-\ }
-
 let g:lightline = {
       \ 'colorscheme': 'Tomorrow_Night',
       \ 'mode_map': { 'c': 'NORMAL' },
