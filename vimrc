@@ -2,7 +2,7 @@ execute pathogen#infect()
 
 syntax on
 filetype plugin indent on
-set t_Co=256
+" set t_Co=256
 set vb
 set mousehide
 set laststatus=2
@@ -35,9 +35,9 @@ set showcmd
 set showmatch
 set nostartofline
 
-" let base16colorspace=256
+let base16colorspace=256
 set background=dark
-colorscheme base16-tomorrow
+colorscheme base16-default
 
 imap jj <esc>
 ino jj <esc>
@@ -52,7 +52,9 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'tomorrow'
+" let g:airline_left_sep = '|'
+" let g:airline_right_sep = '|'
+let g:airline_theme = 'base16'
 let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
