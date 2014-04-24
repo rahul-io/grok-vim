@@ -1,4 +1,11 @@
-execute pathogen#infect()
+if filereadable(expand('~/src/vim/bundle/vim-pathogen/autoload/pathogen.vim'))
+  source ~/src/vim/bundle/vim-pathogen/autoload/pathogen.vim
+endif
+if has("win32")
+  let &runtimepath = substitute(&runtimepath,'\(Documents and Settings\|Users\)[\\/][^\\/,]*[\\/]\zsvimfiles\>','.vim','g')
+endif
+silent! execute pathogen#infect("~/.vim/vendor/{}")
+silent! execute pathogen#infect("~/.vim/bundle/{}")
 
 syntax on
 filetype plugin indent on
@@ -20,6 +27,16 @@ set scrolloff=8
 set wrapscan
 
 set hidden
+
+set guioptions+=c
+set guioptions+=R
+set guioptions-=m
+set guioptions-=r
+set guioptions-=b
+set guioptions-=T
+set guioptions-=R
+set guioptions-=L
+set guioptions-=e
 
 set autoindent
 set cindent
@@ -50,11 +67,12 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*
 " neocomplete
 " Next generation completion framework.
 
+"set guifont=Liberation_Mono_for_Powerline:h10 
+set guifont=Liberation_Mono_for_Powerline:h10
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 " let g:airline_left_sep = '|'
 " let g:airline_right_sep = '|'
-let g:airline_theme = 'base16'
 let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
