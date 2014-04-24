@@ -28,6 +28,7 @@ set wrapscan
 
 set hidden
 
+"make gvim look like vim in a terminal
 set guioptions+=c
 set guioptions+=R
 set guioptions-=m
@@ -63,26 +64,13 @@ vno v <esc>
 nnoremap <silent> ,z :bp<CR>
 nnoremap <silent> ,x :bn<CR>
 
+"Ignoring things, primarily for the sake of ctrl P, might not be valid for
+"your use case
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/components/*,*/public/*
-" neocomplete
-" Next generation completion framework.
 
-"set guifont=Liberation_Mono_for_Powerline:h10 
-set guifont=Liberation_Mono_for_Powerline:h10
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
-" let g:airline_left_sep = '|'
-" let g:airline_right_sep = '|'
-let g:acp_enableAtStartup = 0
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-
-" Default # of completions is 100, that's crazy.
-let g:neocomplete#max_list = 5
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Set minimum syntax keyword length.
-let g:neocomplete#sources#syntax#min_keyword_length = 3
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
@@ -95,6 +83,7 @@ let g:syntastic_enable_highlighting = 0
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 let g:sneak#streak = 1
 
+"defined custom extensions for plsql we use at work
 au BufNewFile,BufRead *.plb set filetype=plsql
 au BufNewFile,BufRead *.pls set filetype=plsql
 
