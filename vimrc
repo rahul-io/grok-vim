@@ -9,6 +9,7 @@ silent! execute pathogen#infect("~/.vim/bundle/{}")
 
 syntax on
 filetype plugin indent on
+set nocompatible 
 " set t_Co=256
 set vb
 set mousehide
@@ -53,7 +54,7 @@ set showcmd
 set showmatch
 set nostartofline
 
-let base16colorspace=256
+" let base16colorspace=256
 set background=dark
 colorscheme base16-default
 
@@ -61,11 +62,10 @@ imap jj <esc>
 ino jj <esc>
 cno jj <c-c>
 vno v <esc>
-nnoremap <silent> ,z :bp<CR>
-nnoremap <silent> ,x :bn<CR>
+" nnoremap <silent> ,z :bp<CR>
+" nnoremap <silent> ,x :bn<CR>
 
-"Ignoring things, primarily for the sake of ctrl P, might not be valid for
-"your use case
+"Ignoring things, primarily for the sake of ctrl P, might not be valid for your use case
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/components/*,*/public/*
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -81,9 +81,8 @@ autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 
 let g:syntastic_enable_highlighting = 0
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
-let g:sneak#streak = 1
 
 "defined custom extensions for plsql we use at work
-au BufNewFile,BufRead *.plb set filetype=plsql
-au BufNewFile,BufRead *.pls set filetype=plsql
+au BufNewFile,BufRead *.plb set filetype=plsql.plsqlvorax
+au BufNewFile,BufRead *.pls set filetype=plsql.sqlvorax
 
