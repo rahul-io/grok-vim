@@ -54,9 +54,18 @@ set showcmd
 set showmatch
 set nostartofline
 
+" highlight search results
+set hlsearch
+
 " let base16colorspace=256
 set background=dark
 colorscheme base16-default
+
+" Window splits
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map - <C-W>-
+map + <C-W>+
 
 imap jj <esc>
 ino jj <esc>
