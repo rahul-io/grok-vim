@@ -88,3 +88,6 @@
 [submodule "bundle/bundle/supertab"]
 	path = bundle/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/easygrep"]
+	path = bundle/easygrep
+	url = https://github.com/vim-scripts/EasyGrep.git
