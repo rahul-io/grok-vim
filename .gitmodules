@@ -78,7 +78,7 @@
 	url = git@github.com:tpope/vim-abolish.git
 [submodule "bundle/javascript"]
 	path = bundle/javascript
-	url = https://github.com/pangloss/vim-javascript.git
+	url = https://github.com/jelera/vim-javascript-syntax.git
 [submodule "bundle/sneak"]
 	path = bundle/sneak
 	url = git@github.com:justinmk/vim-sneak.git
