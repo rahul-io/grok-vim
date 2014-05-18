@@ -48,10 +48,10 @@
 	url = https://github.com/honza/vim-snippets.git
 [submodule "bundle/stylus"]
 	path = bundle/stylus
-	url = git@github.com:wavded/vim-stylus.git
+	url = https://github.com/wavded/vim-stylus.git
 [submodule "bundle/jade"]
 	path = bundle/jade
-	url = git@github.com:digitaltoad/vim-jade.git
+	url = https://github.com/digitaltoad/vim-jade.git
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = git@github.com:vim-scripts/taglist.vim.git
