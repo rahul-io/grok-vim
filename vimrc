@@ -57,7 +57,7 @@ set nostartofline
 " highlight search results
 set hlsearch
 
-" let base16colorspace=256
+let base16colorspace=256
 set background=dark
 colorscheme base16-default
 
@@ -75,7 +75,7 @@ vno v <esc>
 " nnoremap <silent> ,x :bn<CR>
 
 "Ignoring things, primarily for the sake of ctrl P, might not be valid for your use case
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/components/*,*/public/*
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/components/*,*/public/*,*/releases/*
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
