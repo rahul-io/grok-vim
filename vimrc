@@ -66,6 +66,7 @@ map <C-J> <C-W>j
 map <C-K> <C-W>k
 map - <C-W>-
 map + <C-W>+
+map <S-Tab> :bn<CR>
 
 imap jj <esc>
 ino jj <esc>
@@ -75,7 +76,7 @@ vno v <esc>
 " nnoremap <silent> ,x :bn<CR>
 
 "Ignoring things, primarily for the sake of ctrl P, might not be valid for your use case
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/components/*,*/public/*,*/releases/*
+set wildignore+=*.iml,*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/components/*,*/public/*,*/releases/*,*/dist/*
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
