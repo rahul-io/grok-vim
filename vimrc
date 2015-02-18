@@ -75,6 +75,9 @@ vno v <esc>
 " nnoremap <silent> ,z :bp<CR>
 " nnoremap <silent> ,x :bn<CR>
 
+" Autoformat key
+noremap <F3> :Autoformat<CR><CR>
+
 "Ignoring things, primarily for the sake of ctrl P, might not be valid for your use case
 set wildignore+=*.iml,*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/components/*,*/public/*,*/releases/*,*/dist/*
 
