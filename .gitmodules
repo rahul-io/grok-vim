@@ -100,3 +100,6 @@
 [submodule "bundle/vim-autoformat"]
 	path = bundle/vim-autoformat
 	url = https://github.com/Chiel92/vim-autoformat.git
+[submodule "bundle/sass"]
+	path = bundle/sass
+	url = https://github.com/cakebaker/scss-syntax.vim.git
