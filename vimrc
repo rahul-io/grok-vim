@@ -10,7 +10,6 @@ silent! execute pathogen#infect("~/.vim/bundle/{}")
 syntax on
 filetype plugin indent on
 set nocompatible 
-" set t_Co=256
 set vb
 set mousehide
 set laststatus=2
@@ -44,8 +43,8 @@ set autoindent
 set cindent
 set smartindent
 
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set expandtab
 
 set clipboard=unnamed
@@ -57,7 +56,8 @@ set nostartofline
 " highlight search results
 set hlsearch
 
-let base16colorspace=256
+let base16colorspace=256 " Access colors present in 256 colorspace
+set t_Co=256 " 256 color mode
 set background=dark
 colorscheme base16-default
 
@@ -67,6 +67,7 @@ map <C-K> <C-W>k
 map - <C-W>-
 map + <C-W>+
 map <S-Tab> :bn<CR>
+map gh <C-W><C-W>
 
 imap jj <esc>
 ino jj <esc>
@@ -79,7 +80,7 @@ vno v <esc>
 noremap <F3> :Autoformat<CR><CR>
 
 "Ignoring things, primarily for the sake of ctrl P, might not be valid for your use case
-set wildignore+=*.iml,*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/components/*,*/public/*,*/releases/*,*/dist/*
+set wildignore+=*.iml,*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/public/*,*/releases/*,*/dist/*
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
