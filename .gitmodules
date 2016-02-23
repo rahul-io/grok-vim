@@ -100,3 +100,6 @@
 [submodule "bundle/sass"]
 	path = bundle/sass
 	url = https://github.com/cakebaker/scss-syntax.vim.git
+[submodule "bundle/addon-mw-utils"]
+	path = bundle/addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
