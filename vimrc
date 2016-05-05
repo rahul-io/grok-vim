@@ -95,6 +95,7 @@ autocmd! BufNewFile,BufRead *.raml set filetype=yaml
 
 
 let g:syntastic_enable_highlighting = 0
+let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
 "defined custom extensions for plsql we use at work
