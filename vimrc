@@ -6,10 +6,19 @@ if has("win32")
 endif
 silent! execute pathogen#infect("~/.vim/vendor/{}")
 silent! execute pathogen#infect("~/.vim/bundle/{}")
-
+let g:used_javascript_libs = 'angularjs,underscore'
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_ngdoc = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:solarized_termcolors=256
+let g:airline_powerline_fonts = 1
+let g:airline_theme='dark'
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
 syntax on
 filetype plugin indent on
 set nocompatible 
+set t_Co=256
 set vb
 set mousehide
 set laststatus=2
@@ -43,8 +52,8 @@ set autoindent
 set cindent
 set smartindent
 
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 set expandtab
 
 set clipboard=unnamed
@@ -56,10 +65,9 @@ set nostartofline
 " highlight search results
 set hlsearch
 
-let base16colorspace=256 " Access colors present in 256 colorspace
-set t_Co=256 " 256 color mode
+let base16colorspace=256
 set background=dark
-colorscheme base16-default
+colorscheme solarized
 
 " Window splits
 map <C-J> <C-W>j
@@ -67,7 +75,6 @@ map <C-K> <C-W>k
 map - <C-W>-
 map + <C-W>+
 map <S-Tab> :bn<CR>
-map gh <C-W><C-W>
 
 imap jj <esc>
 ino jj <esc>
@@ -78,9 +85,10 @@ vno v <esc>
 
 " Autoformat key
 noremap <F3> :Autoformat<CR><CR>
+set clipboard+=unnamed
 
 "Ignoring things, primarily for the sake of ctrl P, might not be valid for your use case
-set wildignore+=*.iml,*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/public/*,*/releases/*,*/dist/*
+set wildignore+=*.iml,*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/components/*,*/public/*,*/releases/*,*/dist/*,*/www-build/*
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
@@ -95,10 +103,11 @@ autocmd! BufNewFile,BufRead *.raml set filetype=yaml
 
 
 let g:syntastic_enable_highlighting = 0
-let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
 "defined custom extensions for plsql we use at work
 au BufNewFile,BufRead *.plb set filetype=plsql.plsqlvorax
 au BufNewFile,BufRead *.pls set filetype=plsql.sqlvorax
 
+execute pathogen#infect()
+call pathogen#helptags()
