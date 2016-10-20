@@ -111,3 +111,4 @@ au BufNewFile,BufRead *.pls set filetype=plsql.sqlvorax
 
 execute pathogen#infect()
 call pathogen#helptags()
+nnoremap <silent> <Space> :silent noh<Bar>echo<CR>
