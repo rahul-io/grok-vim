@@ -7,7 +7,7 @@ Pretty solid base for using vim on a daily basis.
 The plugins are setup as submodules and the vimrc must be linked to your home directory.
 
     cd ~
-    git clone http://github.com/strangescript/grok-vim.git .vim
+    git clone https://github.com/maneesht/grok-vim .vim
     ln -s ~/.vim/vimrc ~/.vimrc
     cd ~/.vim
     git submodule init
