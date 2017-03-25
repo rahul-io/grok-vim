@@ -1,8 +1,8 @@
-#Fork of grok-vim
+# Fork of grok-vim
 
 Pretty solid base for using vim on a daily basis.
 
-##Installation
+## Installation
 
 The plugins are setup as submodules and the vimrc must be linked to your home directory.
 
@@ -17,7 +17,7 @@ The plugins are setup as submodules and the vimrc must be linked to your home di
     cd ~/.vim/bundle
     git clone git://github.com/altercation/vim-colors-solarized.git
 
-##Adding new modules
+## Adding new modules
 
 Adding modules is easy, for example, if we needed to add Tim Pope's git plugin, fugitive.
 
@@ -26,11 +26,11 @@ Adding modules is easy, for example, if we needed to add Tim Pope's git plugin, 
     git commit -m "Install Fugitive.vim bundle as a submodule."
 
 
-##Upgrading modules
+## Upgrading modules
 
     git submodule foreach git pull origin master
 
-##Removing unwanted modules
+## Removing unwanted modules
 
     cd ~/.vim
     git rm --cached bundle/"some module here"
