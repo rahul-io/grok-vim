@@ -19,7 +19,8 @@ syntax on
 filetype plugin indent on
 set nocompatible 
 set t_Co=256
-set vb
+" Get rid of visual bells/flashes
+set novb
 set mousehide
 set laststatus=2
 
