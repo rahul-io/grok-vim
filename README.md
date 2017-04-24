@@ -12,10 +12,6 @@ The plugins are setup as submodules and the vimrc must be linked to your home di
     cd ~/.vim
     git submodule init
     git submodule update
-## Colorscheme
-
-    cd ~/.vim/bundle
-    git clone git://github.com/altercation/vim-colors-solarized.git
 
 ## Adding new modules
 
