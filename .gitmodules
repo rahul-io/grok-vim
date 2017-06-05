@@ -1,6 +1,6 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
-	url = https://github.com/kien/ctrlp.vim.git
+	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -100,7 +100,7 @@
 [submodule "bundle/sass"]
 	path = bundle/sass
 	url = https://github.com/cakebaker/scss-syntax.vim.git
-[submodule "bundle/addon-mw-utils"]
+[submodule "bundle/atddon-mw-utils"]
 	path = bundle/addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
 [submodule "bundle/vim-colors-solarized"]
