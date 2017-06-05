@@ -71,8 +71,10 @@ set background=dark
 colorscheme solarized
 
 " Window splits
+map <C-H> <C-W>h
 map <C-J> <C-W>j
 map <C-K> <C-W>k
+map <C-L> <C-W>l
 map - <C-W>-
 map + <C-W>+
 map <S-Tab> :bn<CR>
