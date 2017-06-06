@@ -77,7 +77,21 @@ map <C-K> <C-W>k
 map <C-L> <C-W>l
 map - <C-W>-
 map + <C-W>+
-map <S-Tab> :bn<CR>
+
+" Tab shortcuts
+" map <S-Tab> :bn<CR>
+" map <C-S-]> gt
+" map <C-S-[> gT
+" map <C-1> 1gt
+" map <C-2> 2gt
+" map <C-3> 3gt
+" map <C-4> 4gt
+" map <C-5> 5gt
+" map <C-6> 6gt
+" map <C-7> 7gt
+" map <C-8> 8gt
+" map <C-9> 9gt
+" map <C-0> :tablast<CR>
 
 imap jj <esc>
 ino jj <esc>
@@ -103,6 +117,7 @@ autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 autocmd! BufNewFile,BufRead *.raml set filetype=yaml
+
 
 
 let g:syntastic_enable_highlighting = 0
